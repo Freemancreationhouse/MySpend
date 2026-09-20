@@ -1,4 +1,4 @@
-name: Build My Spend V1.1 Safe APK
+name: Build My Spend V1.2 Auto APK
 on:
   workflow_dispatch:
   push:
@@ -17,6 +17,6 @@ jobs:
         run: gradle --no-daemon assembleDebug
       - uses: actions/upload-artifact@v4
         with:
-          name: MySpend-V1.1-Safe-APK
+          name: MySpend-V1.2-Auto-APK
           path: app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
